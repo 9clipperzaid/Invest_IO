@@ -1,0 +1,93 @@
+name: smart_portfolio_tracker
+description: Smart Portfolio Tracker with AI Insights
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ───────────────────────────────────────
+  # STATE MANAGEMENT — GETX
+  # ───────────────────────────────────────
+  get: ^4.6.6
+
+  # ───────────────────────────────────────
+  # FIREBASE
+  # ───────────────────────────────────────
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.20.0
+  cloud_firestore: ^4.15.9
+  google_sign_in: ^6.2.1
+
+  # ───────────────────────────────────────
+  # LOCAL DATABASE
+  # ───────────────────────────────────────
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  flutter_secure_storage: ^9.0.0
+
+  # ───────────────────────────────────────
+  # API / NETWORKING
+  # ───────────────────────────────────────
+  dio: ^5.4.3+1
+  http: ^1.2.1
+  connectivity_plus: ^6.0.3
+  google_generative_ai: ^0.4.3
+
+  # ───────────────────────────────────────
+  # CHARTS
+  # ───────────────────────────────────────
+  fl_chart: ^0.67.0
+
+  # ───────────────────────────────────────
+  # CSV HANDLING
+  # ───────────────────────────────────────
+  csv: ^6.0.0
+  file_picker: ^8.0.3
+
+  # ───────────────────────────────────────
+  # UI COMPONENTS
+  # ───────────────────────────────────────
+  cached_network_image: ^3.3.1
+  flutter_svg: ^2.0.10+1
+  lottie: ^3.1.0
+  shimmer: ^3.0.0
+  google_fonts: ^6.2.1
+
+  # ───────────────────────────────────────
+  # UTILITIES
+  # ───────────────────────────────────────
+  intl: ^0.19.0
+  url_launcher: ^6.2.5
+  share_plus: ^9.0.0
+  flutter_dotenv: ^6.0.1
+  logger: ^2.3.0
+  equatable: ^2.0.5
+
+
+  # ───────────────────────────────────────
+  # WEBVIEW (for news articles)
+  # ───────────────────────────────────────
+  webview_flutter: ^4.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.9
+  flutter_lints: ^4.0.0
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - .env
